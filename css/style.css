@@ -1,0 +1,195 @@
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: #f7f7fa;
+}
+.gridblock{
+    display: grid;
+    width: 95%;
+    height: 350px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    margin: auto;
+    position:relative;
+    top:100px;
+      
+}
+.grid h1{
+    font-size: 24px;
+    line-height: 45px;
+}
+.grid1 i{
+    color: #a4c639;
+    font-size: 80px;
+}
+.grid2 i{
+    color:#999999;
+    font-size: 80px;
+}
+.grid3 i{
+    color: #00adef;
+    font-size: 80px;
+}
+.grid4 i{
+    color: #00adef;
+    font-size: 80px;
+}
+.grid{
+    height: 100%;
+    text-align:center;
+    font-family: sans-serif;
+    background-color: blue;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+}
+.grid p{
+    font-size: 16px;
+    color:grey;
+ 
+    line-height: 25px;
+}
+.grid:hover{
+margin-top:-12px;
+      box-shadow: 0 15px 15px rgba(0,0,0,.15);
+ 
+}
+.grid1:hover{
+       border-top: 6px solid #a4c639;
+       transition: .4s;
+}
+.grid2:hover{
+       border-top: 6px solid #999999;
+       transition: .4s;
+}
+.grid3:hover{
+       border-top: 6px solid #00adef;
+       transition: .4s;
+}
+.grid4:hover{
+       border-top: 6px solid #00adef;
+       transition: .4s;
+}
+.btn{
+    width: 180px;
+    height: 60px;
+    background-color:#181a3e;
+    position: relative;
+    top:200px;
+    margin: auto;
+    text-align:center;
+    line-height: 60px;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+    color:White;
+    font-family: verdana;
+    letter-spacing: 1px;
+    
+}
+.btn::before{
+    width:0;
+    height: 60px;
+    content: "";
+    background-color:#00bcd4;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    transition:.5s;
+}
+.btn:hover::before{
+    width: 100%;
+}
+.imggrid{
+    width: 80%;
+    height: 350px;
+    margin: auto;
+    position: relative;
+    top:250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.imgr{
+    height:100%;
+    width:100%;
+    position: relative;
+    
+}
+.img1{
+    background-image: url(../images/1.png);
+    background-size: cover;
+    background-position: center;
+}
+.img2{
+    background-image: url(../images/2.png);
+    background-size: cover;
+     background-position: center;
+}
+.img3{
+    background-image: url(../images/3.png);
+    background-size: cover;
+     background-position: center;
+}
+
+.imgr::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height:0;
+    background-color: aqua;
+    opacity: .5;
+    transition: 1s;
+  bottom: 0px;
+    right: 0px;
+    position: absolute;
+    
+}
+.imgr:hover::after{
+    height:100%;
+    width: 100%;
+    transform: scale(1);
+    opacity: 0.2;
+}
+.imgr::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height:0;
+    background-color: aqua;
+    opacity: .5;
+    transition: 1s;
+  top:0px;
+    left: 0px;
+    position: absolute;
+    
+}
+.imgr:hover::before{
+    height:100%;
+    width: 100%;
+    transform: scale(1);
+    opacity:0.2;
+}
+.imgtb{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.imgtb::before{
+    content:"";
+    height: 0;
+    width: 100%;
+    background-color: aqua;
+    position: absolute;
+     top:50%;
+    transition: 0.5s;
+    opacity: .5;
+}
+.imgtb:hover::before{
+    transform: translatey(-50%);
+    height: 100%;
+}
